@@ -1,24 +1,23 @@
 # Segurança de Sistemas Computacionais
 # Case Prático 1 — ambiente de testes
 #
-#
 # Uso:
 #   docker compose up -d          # sobe o serviço descomentado
 #   docker compose logs -f        # acompanhar logs
 #   docker compose down           # derrubar o ambiente
 
 services:
-
   # --- OWASP Juice Shop ---
   juice-shop:
     image: bkimminich/juice-shop:latest
     container_name: case1-juice-shop
     ports:
-      - "3000:3000"
+      - "127.0.0.1:3000:3000"
     restart: unless-stopped
     networks:
       - pentest-net
 
 networks:
   pentest-net:
+    name: pentest-net
     driver: bridge
