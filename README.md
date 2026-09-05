@@ -120,12 +120,3 @@ Não possui um script de linha de comando — é usado interativamente como prox
 ### Navegador com DevTools
 
 Usado de forma complementar, sem script associado — inspecione requisições, cookies e o `Local Storage` (Aba **Application** no Chrome/Edge) para confirmar achados como o token JWT armazenado no cliente (V-09).
-
-## Estrutura esperada do repositório
-
-```
-ssc-cp1/
-├── docker-compose.yml
-├── README.md
-└── (evidências, requests salvas, saídas de scripts, etc.)
-```
